@@ -26,26 +26,19 @@ public class MenuInicial {
             System.out.println("Selecione uma opção:");
 
             opcao = obj.readLine();
+            System.out.println("");
 
             switch (opcao) {
                 case "1":
-                    System.out.println("Criar Pessoa/Aluno");
-                    System.out.println("");
                     cadastrar.Cadastro();
                     break;
                 case "2":
-                    System.out.println("Listar pessoas/alunos");
-                    System.out.println("");
                     listar.ListarCadastros();
                     break;
                 case "3":
-                    System.out.println("Atualizar pessoa/aluno");
-                    System.out.println("");
 
                     break;
                 case "4":
-                    System.out.println("Excluir pessoa/aluno");
-                    System.out.println("");
 
                     break;
                 case "5":
@@ -55,11 +48,9 @@ public class MenuInicial {
                     System.exit(0);
                 default:
                     System.out.println("");
-                    System.out.println("Opção inválida, tente novamente");
+                    System.out.println("Opção inválida, tente novamente.");
                     System.out.println("");
             }
-
         } while (!(opcao == "1") || !(opcao == "2") || !(opcao == "3") || !(opcao == "4") || !(opcao == "5"));
-
     }
 }

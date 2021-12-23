@@ -59,7 +59,7 @@ public class Cadastrar {
 
         System.out.println("");
         System.out.println("Cadastro realizado com sucesso!");
-        System.out.println("Pressione qualquer tecla para voltar ao menu inicial.");
+        System.out.println("Pressione ENTER para voltar ao menu inicial.");
         new java.util.Scanner(System.in).nextLine();
 
         menu.Menuinicial();

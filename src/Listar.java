@@ -5,19 +5,15 @@ public class Listar {
     MenuInicial menu = new MenuInicial();
     //Função Listar Pessoa/Aluno
     public void ListarCadastros() throws IOException {
-        System.out.println("");
-        System.out.println("Pessoa(s)/Aluno(s) cadastrado(s): ");
-        System.out.println("");
 
         if(Main.cadastro.isEmpty()){
             System.out.println("Não há Aluno ou Pessoa cadastrada.");
             System.out.println("");
 
-            System.out.println("Pressione qualquer tecla para voltar ao menu inicial.");
-            new java.util.Scanner(System.in).nextLine();
-
-            menu.Menuinicial();
         }else{
+            System.out.println("Pessoa(s)/Aluno(s) cadastrado(s): ");
+            System.out.println("");
+
             for (Pessoa item: Main.cadastro) {
                 System.out.println("Nome: " + item.getNome());
                 System.out.println("Telefone: " + item.getTelefone());
@@ -34,14 +30,12 @@ public class Listar {
             System.out.println("Total: " + Main.cadastro.size());
             System.out.println("");
 
-            System.out.println("Pressione qualquer tecla para voltar ao menu inicial.");
-            new java.util.Scanner(System.in).nextLine();
-
-            menu.Menuinicial();
         }
 
+        System.out.println("Pressione ENTER para voltar ao menu inicial.");
+        new java.util.Scanner(System.in).nextLine();
 
-
+        menu.Menuinicial();
     }
 
 }
