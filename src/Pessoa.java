@@ -1,12 +1,16 @@
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Pessoa {
 
     private String nome;
     private String telefone;
-    private Date dataNasc;
-    private Date dataCadastro;
-    private Date dataUltAlt;
+    private String dataNasc;
+    private LocalDateTime dataCadastro;
+    private LocalDateTime dataUltAlt;
+
+    public Pessoa() {
+
+    }
 
     public String getNome() {
         return nome;
@@ -20,22 +24,22 @@ public class Pessoa {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    public Date getDataNasc() {
+    public String getDataNasc() {
         return dataNasc;
     }
-    public void setDataNasc(Date dataNasc) {
+    public void setDataNasc(String dataNasc) {
         this.dataNasc = dataNasc;
     }
-    public Date getDataCadastro() {
+    public LocalDateTime getDataCadastro() {
         return dataCadastro;
     }
-    public void setDataCadastro(Date dataCadastro) {
+    public void setDataCadastro(LocalDateTime dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-    public Date getDataUltAlt() {
+    public LocalDateTime getDataUltAlt() {
         return dataUltAlt;
     }
-    public void setDataUltAlt(Date dataUltAlt) {
+    public void setDataUltAlt(LocalDateTime dataUltAlt) {
         this.dataUltAlt = dataUltAlt;
     }
 

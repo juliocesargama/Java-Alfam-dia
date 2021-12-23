@@ -1,7 +1,5 @@
 public class Aluno extends Pessoa {
 
-    private Double notaFinal;
-
     public Double getNotaFinal() {
         return notaFinal;
     }
@@ -9,4 +7,12 @@ public class Aluno extends Pessoa {
     public void setNotaFinal(Double notaFinal) {
         this.notaFinal = notaFinal;
     }
+
+    private Double notaFinal;
+
+    public Aluno(){
+        super();
+    }
+
+
 }
