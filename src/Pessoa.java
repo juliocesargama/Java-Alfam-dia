@@ -1,10 +1,11 @@
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Pessoa {
 
     private String nome;
     private String telefone;
-    private String dataNasc;
+    private Date dataNasc;
     private LocalDateTime dataCadastro;
     private LocalDateTime dataUltAlt;
 
@@ -24,10 +25,10 @@ public class Pessoa {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-    public String getDataNasc() {
+    public Date getDataNasc() {
         return dataNasc;
     }
-    public void setDataNasc(String dataNasc) {
+    public void setDataNasc(Date dataNasc) {
         this.dataNasc = dataNasc;
     }
     public LocalDateTime getDataCadastro() {

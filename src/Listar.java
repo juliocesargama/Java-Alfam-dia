@@ -1,10 +1,11 @@
 import java.io.IOException;
+import java.text.ParseException;
 
 public class Listar {
 
     MenuInicial menu = new MenuInicial();
     //Função Listar Pessoa/Aluno
-    public void ListagemCompleta() throws IOException {
+    public void ListagemCompleta() throws IOException, ParseException {
 
         if(Main.cadastro.isEmpty()){
             System.out.println("Não há Aluno ou Pessoa cadastrada.");

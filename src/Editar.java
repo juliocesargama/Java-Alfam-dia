@@ -1,6 +1,10 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static java.time.LocalDateTime.now;
 
@@ -11,7 +15,7 @@ public class Editar {
     BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
     int opcao;
 
-        public void Edicao () throws IOException {
+        public void Edicao () throws IOException, ParseException {
 
         if(!Main.cadastro.isEmpty()){
             do {
@@ -33,7 +37,10 @@ public class Editar {
                 aluno.setTelefone(obj.readLine());
 
                 System.out.println("Digite a data de nascimento no formato dd/mm/aaaa: ");
-                aluno.setDataNasc(obj.readLine());
+                DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                Date date = formatter.parse(obj.readLine());
+
+                aluno.setDataNasc(date);
 
                 System.out.println("Digite a nota final do aluno: ");
                 aluno.setNotaFinal(Double.parseDouble(obj.readLine()));
@@ -54,7 +61,10 @@ public class Editar {
                 pessoa.setTelefone(obj.readLine());
 
                 System.out.println("Digite a data de nascimento no formato dd/mm/aaaa: ");
-                pessoa.setDataNasc(obj.readLine());
+                DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                Date date = formatter.parse(obj.readLine());
+
+                pessoa.setDataNasc(date);
 
                 pessoa.setDataUltAlt(now());
                 pessoa.setDataCadastro(Main.cadastro.get(opcao).getDataCadastro());

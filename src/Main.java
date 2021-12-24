@@ -11,8 +11,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        MenuInicial menu = new MenuInicial();
-        menu.Menuinicial();
-
+        try {
+            MenuInicial menu = new MenuInicial();
+            menu.Menuinicial();
+        } catch (Exception e){
+            System.out.println(e);
+        }
     }
 }

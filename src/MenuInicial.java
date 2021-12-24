@@ -1,10 +1,11 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
 
 public class MenuInicial {
     //Função Menu Inicial
-    public void Menuinicial() throws IOException {
+    public void Menuinicial() throws IOException, ParseException {
 
         Cadastrar cadastrar = new Cadastrar();
         Listar listar = new Listar();

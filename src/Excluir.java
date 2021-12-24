@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
 
 public class Excluir {
 
@@ -9,7 +10,7 @@ public class Excluir {
     BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
     int opcao;
 
-    public void Exclusao () throws IOException {
+    public void Exclusao () throws IOException, ParseException {
 
         if(!Main.cadastro.isEmpty()){
             do {
