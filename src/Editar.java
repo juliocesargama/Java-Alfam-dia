@@ -7,12 +7,9 @@ import static java.time.LocalDateTime.now;
 public class Editar {
 
     Listar lista = new Listar();
-
-
-        MenuInicial menu = new MenuInicial();
-
-        BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
-        int opcao;
+    MenuInicial menu = new MenuInicial();
+    BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+    int opcao;
 
         public void Edicao () throws IOException {
 

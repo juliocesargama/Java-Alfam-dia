@@ -9,6 +9,7 @@ public class MenuInicial {
         Cadastrar cadastrar = new Cadastrar();
         Listar listar = new Listar();
         Editar editar = new Editar();
+        Excluir excluir = new Excluir();
 
         BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
         String opcao = "";
@@ -40,7 +41,7 @@ public class MenuInicial {
                     editar.Edicao();
                     break;
                 case "4":
-
+                    excluir.Exclusao();
                     break;
                 case "5":
                     System.out.println("");
