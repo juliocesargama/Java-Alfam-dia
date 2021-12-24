@@ -8,6 +8,7 @@ public class MenuInicial {
 
         Cadastrar cadastrar = new Cadastrar();
         Listar listar = new Listar();
+        Editar editar = new Editar();
 
         BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
         String opcao = "";
@@ -18,7 +19,7 @@ public class MenuInicial {
             System.out.println("****************");
             System.out.println("");
             System.out.println("1 - Criar pessoa/aluno");
-            System.out.println("2 - Listas pessoas/alunos");
+            System.out.println("2 - Listar pessoas/alunos");
             System.out.println("3 - Atualizar pessoa/aluno");
             System.out.println("4 - Excluir pessoa/aluno");
             System.out.println("5 - Encerrar aplicação");
@@ -33,10 +34,10 @@ public class MenuInicial {
                     cadastrar.Cadastro();
                     break;
                 case "2":
-                    listar.ListarCadastros();
+                    listar.ListagemCompleta();
                     break;
                 case "3":
-
+                    editar.Edicao();
                     break;
                 case "4":
 

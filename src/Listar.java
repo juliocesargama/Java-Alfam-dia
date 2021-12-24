@@ -4,7 +4,7 @@ public class Listar {
 
     MenuInicial menu = new MenuInicial();
     //Função Listar Pessoa/Aluno
-    public void ListarCadastros() throws IOException {
+    public void ListagemCompleta() throws IOException {
 
         if(Main.cadastro.isEmpty()){
             System.out.println("Não há Aluno ou Pessoa cadastrada.");
@@ -36,6 +36,23 @@ public class Listar {
         new java.util.Scanner(System.in).nextLine();
 
         menu.Menuinicial();
+    }
+
+    public void ListagemResumida() throws IOException{
+        if(Main.cadastro.isEmpty()){
+            System.out.println("Não há Aluno ou Pessoa cadastrada.");
+            System.out.println("");
+
+        }else {
+            System.out.println("");
+
+            for (Pessoa item: Main.cadastro) {
+            System.out.println("# | Nome");
+            System.out.print(Main.cadastro.indexOf(item) + " ");
+            System.out.print("  " + item.getNome());
+            }
+            System.out.println("");
+        }
     }
 
 }
